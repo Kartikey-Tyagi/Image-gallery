@@ -100,11 +100,11 @@ export default function Home() {
                 scrollThreshold={0.9}
                 endMessage={<h3 className="text_center" style={{ marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "center" }}>No more Images to show<small style={{ margin: "5px 0 0 5px" }}><BsEmojiSmile /></small></h3>}
             >
-                {!model && <div className="image_container">
+                <div className="image_container">
                     {image.map((element, key) => {
                         return <ImageItems key={key} element={element} openModel={setModel} setModelElement={setModelElement} loader={loader} setLoader={setLoader} setProgress={setProgress}/>
                     })}
-                </div>}
+                </div>
             </InfiniteScroll>
 
         </>
