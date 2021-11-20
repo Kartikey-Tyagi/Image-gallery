@@ -1,7 +1,7 @@
-import React from 'react'
-import { FiThumbsUp, FiTwitter } from 'react-icons/fi'
-import { ImCross } from 'react-icons/im'
-import { AiOutlineInstagram } from 'react-icons/ai'
+import React from 'react';
+import { FiThumbsUp, FiTwitter } from 'react-icons/fi';
+import { ImCross } from 'react-icons/im';
+import { AiOutlineInstagram } from 'react-icons/ai';
 import Spinner from './Spinner';
 
 export default function Model(props) {

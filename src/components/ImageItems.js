@@ -1,5 +1,5 @@
-import React from 'react'
-import { FiThumbsUp } from 'react-icons/fi'
+import React from 'react';
+import { FiThumbsUp } from 'react-icons/fi';
 
 export default function ImageItems(props) {
 
