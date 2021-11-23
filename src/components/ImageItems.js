@@ -4,14 +4,14 @@ import { FiThumbsUp } from 'react-icons/fi';
 export default function ImageItems(props) {
 
     const getData = () => {
-        props.setProgress(30);
         props.setLoader(true);
+        props.setProgress(30);
         props.setModelElement(props.element);
         props.setProgress(70);
         window.scrollTo(0, 0);
         props.openModel(true);
-        props.setLoader(false);
         props.setProgress(100);
+        props.setLoader(false);
     };
 
     return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { FiThumbsUp, FiTwitter } from 'react-icons/fi';
 import { ImCross } from 'react-icons/im';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import Spinner from './Spinner';
 
 export default function Model(props) {
     const updateTime = props.element.updated_at;
@@ -10,7 +9,7 @@ export default function Model(props) {
         <>
             <div className="model_background">
                 <div className="model_card">
-                    {props.loader ? <Spinner /> : <div className="model_body">
+                    <div className="model_body">
                         <img src={props.element.urls.full} alt={props.element.alt_description} />
                         <div className="model_content">
                             <img src={props.element.user.profile_image.small} alt="userImage" />
@@ -30,7 +29,7 @@ export default function Model(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>}
+                    </div>
                     <div className="close_btn">
                         <ImCross onClick={() => props.openModel(false)} />
                     </div>

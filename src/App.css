@@ -24,7 +24,7 @@ body {
 /*Navbar*/
 .nav_container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.8fr 2fr;
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -44,6 +44,7 @@ body {
   min-height: 42px;
   color: var(--dark--color);
   cursor: pointer;
+  user-select: none;
 }
 
 .search_bar img {
@@ -88,8 +89,7 @@ body {
       rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.05)
     ),
-    url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")
-      no-repeat center center/cover;
+    url("./images/bg.jfif") no-repeat center center/cover;
   min-height: 45vh;
   padding-top: 50px;
   color: var(--light--color);
@@ -155,7 +155,8 @@ body {
 }
 
 .image_row > img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .user_content {
@@ -218,7 +219,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
   overflow: hidden;
 }
 
@@ -233,17 +233,13 @@ body {
 .model_body > img {
   border-radius: 8px 8px 0px 0px;
   min-width: 100%;
-  max-height: 80vh;
+  max-height: 70vh;
 }
 
 .model_content {
   background-color: #e5e5e5;
   padding: 25px;
   margin-top: -1%;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
   padding: 16px;
   border: 1px solid #e5e5e5;
   border-radius: 0px 0px 8px 8px;
@@ -283,6 +279,7 @@ body {
   text-align: center;
 }
 
+/***Media Queres****/
 @media screen and (max-width: 1100px) {
   .home_container {
     min-height: 45vh;
@@ -306,6 +303,9 @@ body {
 }
 
 @media screen and (max-width: 790px) {
+  .nav_container {
+    grid-template-columns: 1fr 2fr;
+  }
   .home_content > h2 {
     font-size: 1.5em;
   }
@@ -335,9 +335,10 @@ body {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 578px) {
   .nav_container {
     display: block;
+    width: 95%;
   }
   .navbar_brand {
     margin-bottom: 11px;

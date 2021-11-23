@@ -25,7 +25,6 @@ export default function Home(props) {
                     <p className="text_center"><small>Over 2.4 million+ stock Images by our talented community</small></p>
                 </div>
                 <form onSubmit={props.handleFormSubmit} style={{ display: "contents" }}>
-
                     <div className="home_search_bar">
                         <img src={searchImg} alt="search_logo" onClick={props.handleFormSubmit} />
                         <input type="search" onChange={(e) => props.setQuery(e.target.value)} className="home_search_input" placeholder="Search high resolution Images, categories, wallpapers" />
