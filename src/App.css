@@ -89,7 +89,7 @@ body {
       rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.05)
     ),
-    url("./images/bg.jpg") no-repeat center center/cover;
+    url("https://source.unsplash.com/1600x900/?dark") no-repeat center center/cover;
   min-height: 45vh;
   padding-top: 50px;
   color: var(--light--color);
